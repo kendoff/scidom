@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: http://www.jentrata.org/sitemap.xml
+Sitemap: http://kendoff.github.com/sitemap.xml
