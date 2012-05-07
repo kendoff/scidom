@@ -1,0 +1,41 @@
+---
+layout: nil
+---
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
+	<url>
+        <loc>http://jentrata.org/</loc>
+        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    </url>
+    <url>
+        <loc>http://jentrata.org/community.html</loc>
+        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    </url>
+    <url>
+        <loc>http://jentrata.org/documentation.html</loc>
+        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    </url>
+    <url>
+        <loc>http://jentrata.org/downloads.html</loc>
+        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    </url>
+    <url>
+        <loc>http://jentrata.org/getexcited.html</loc>
+        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    </url>
+    <url>
+        <loc>http://jentrata.org/team.html</loc>
+        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    </url>
+    <url>
+        <loc>http://jentrata.org/blog/index.html</loc>
+        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    </url>
+    {% for post in site.categories.blog %}
+	<url>
+   		<loc>http://jentrata.org{{ post.url }}</loc>
+   		<lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+ 	</url>
+    {% endfor %}
+
+</urlset>
